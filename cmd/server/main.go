@@ -25,7 +25,7 @@ if err != nil {
 		c.JSON(501, gin.H{"status code" : 100})
 	})
 	r.POST("/signup",handlers.Signup)
-	r.POST("/sigin",handlers.Signin)
+	r.POST("/signin",handlers.Signin)
 
 	r.Run(":8080")
 }
