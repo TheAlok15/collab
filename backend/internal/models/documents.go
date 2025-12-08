@@ -4,7 +4,7 @@ import "time"
 
 type Document struct {
 	ID            uint `gorm:"primaryKey"`
-	OwnerId       uint `gorm:"not null"`
+	OwnerID       uint `gorm:"not null"`
 	Owner         User
 	Title         string `gorm:"size:255;not null"`
 	Content       string `gorm:"type:text"`
